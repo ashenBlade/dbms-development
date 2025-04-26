@@ -1,9 +1,5 @@
 Описание работы планировщика SQL Server.
 
-Источники:
-1. [The Cascades Framework for Query Optimization at Microsoft (Nico Bruno + Cesar Galindo-Legaria)](https://www.youtube.com/watch?v=pQe1LQJiXN0&list=PLSE8ODhjZXjYPyrUG_YxqYPS7wjWY6gYN)
-2. [Inside the SQL Server Query Optimizer](https://www.programmer-books.com/wp-content/uploads/2019/08/Inside-the-SQL-Server-Query-Optimizer.pdf)
-
 ## Общее описание
 Планировщик запросов построен **на основании фреймворка Cascades**.
 
@@ -223,6 +219,10 @@ Cascades спроектирован в предположении обхода �
 Также, есть DMV для правил трансформаций `sys.dm_exec_query_transformation_stats`.
 
 План запроса можно выгрузить в XML формате.
+
+## Источники
+1. [The Cascades Framework for Query Optimization at Microsoft (Nico Bruno + Cesar Galindo-Legaria)](https://www.youtube.com/watch?v=pQe1LQJiXN0&list=PLSE8ODhjZXjYPyrUG_YxqYPS7wjWY6gYN)
+2. [Inside the SQL Server Query Optimizer](https://www.programmer-books.com/wp-content/uploads/2019/08/Inside-the-SQL-Server-Query-Optimizer.pdf)
 
 ## Полезные идеи
 1. Trivial plan - для OLTP систем многие запросы будут уходить сюда, поэтому этот путь надо оптимизировать
